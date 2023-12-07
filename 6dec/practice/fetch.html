@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table,th,td{
+            border: solid 1px;
+        }
+    </style>
 </head>
 <body>
     
@@ -20,12 +25,35 @@ fetchData .then(response=>{
 })
 .then(data=>{
     console.log('Data:',data);
+
+
+let table=
+`<table>
+    <tr>
+        <td>s.no</td>
+        <td>userid</td>
+        <td>id</td>
+        <td>title</td>
+        <td>completed</td>
+    </tr>
+    ${data.map((items,index)=>`
+        <tr> 
+            <td>${index+1}</td>
+            <td>${items.userId}</td>
+            <td>${items.id}</td>
+            <td>${items.title}</td>
+            <td>${items.completed}</td>
+        </tr>
+        `).join(``)
+    }
+    </table>`
+    document.getElementById("demo").innerHTML=table
 })
 .catch(err=>{
     console.error("Error:",err.message);
 })
 
-
+  
 
 
 
