@@ -3,6 +3,7 @@ import './App.css';
 import About from "./Components/About.js";
 import Contact from './Components/Contact.js';
 import Home from './Components/Home.js';
+import Button from'./Components/Button.js';
 import React from 'react';
 import {BrowserRouter as Router,Route,Link,Routes} from "react-router-dom"
 function App() {
@@ -23,7 +24,7 @@ function App() {
         
       </Routes>
       </Router>
-
+      <Button/>
     </div>
   );
 }
