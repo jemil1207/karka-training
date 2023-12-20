@@ -1,19 +1,19 @@
-// import React from 'react'
-// import {useParams} from 'react-router-dom';
+import React from 'react'
+import {useParams} from 'react-router-dom';
 
 
 
-// let Params=()=>{
+let Params=()=>{
 
 
 
-//      const { id} = useParams();
+     const { id} = useParams();
 
     
 
-//     return(
-//        <div>  page {id} </div>     
-//     );
-// }
+    return(
+       <div>  page {id} </div>     
+    );
+}
 
-// export default Params;
+export default Params;
