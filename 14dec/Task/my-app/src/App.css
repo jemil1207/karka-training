@@ -23,4 +23,11 @@ margin-top: 10px;
  margin-left: 200px;
 }
 
+.arr{
+  
+flex-wrap: wrap;
+text-align: center;
+justify-content: space-around;
+
+}
 

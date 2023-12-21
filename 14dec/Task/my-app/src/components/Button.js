@@ -1,11 +1,12 @@
 import { useState } from'react'
 import React from 'react';
-import About from './About.js'
+import Home from './Home.js'
 
 
 
 
-let Button=()=>{
+
+let Button=({you})=>{
 let [setdata,setvalue]=useState(null)
 
 let b1=()=> {
@@ -22,7 +23,11 @@ let b3=()=>{
       setvalue("XXL")
 }
 
-
+let [call, calla]=useState(null)
+const king=(a)=>{
+  calla(a)
+}
+you(call)
     return(
 
 
@@ -38,7 +43,9 @@ let b3=()=>{
         </div> 
         
         </div>
-        <About prp={setdata}/>
+        <div><Home prp={setdata}  proppiea={king}/>
+        </div>
+        
         
            
         </>  
