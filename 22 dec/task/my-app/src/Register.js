@@ -20,7 +20,8 @@ const Register = () => {
         alert('Registration successful. You can now login.');
         navigate('/');
       }
-    } else {
+    }
+     else {
       alert('Please enter both username and password');
     }
   };
