@@ -2,8 +2,12 @@
 
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import './Home.css'
+import { FaUserCircle } from "react-icons/fa";
 
 export const Home = () => {
+
+  
   const userName = localStorage.getItem('Username');
   const navigate = useNavigate();
   const handleLogout = () => {
@@ -22,38 +26,62 @@ export const Home = () => {
   const handleAdd = () => {
     setTask('');
     setTasks([...tasks, task]);
-  };
+   };
 
   const handleDelete = (index) => {
     const updatedTasks = tasks.filter((_, i) => i !== index);
     setTasks(updatedTasks);
   };
 
-
-  let rp=()=>{
-    
-  }
+  const [edit, setEdit]=useState(null)
+ const handleEdit=(index)=>{
+  const Edit=[...tasks]
+  Edit[index]=task
+  setEdit(null)
+  setTask('')
+  setTasks(Edit)
+ }
 
   return (
     <>
       <div>
         <button onClick={handleLogout}>Logout</button>
-        <h1>Welcome, {userName} Create Your tasks</h1>
-        <input type="text" value={task} onChange={(e) => setTask(e.target.value)} />
-        <button onClick={handleAdd}>Add</button>
-        <ol>
+        <header className="header
+        ">Welcome, {userName} Create Your tasks
+         < FaUserCircle className="image" /></header>
+        <div className="all">
+        <input className="input" type="text" value={task} onChange={(e) => setTask(e.target.value)} />
+        <button className='addbutton'onClick={handleAdd}>Add</button>
+        <div className="listall">
+        <table className="table">
+          
           {tasks.map((a, index) => (
-            <li key={index}>
-              {a} 
-              <button onClick={() => handleDelete(index)}>Delete</button>
-              <button onClick={() => handleEdit(in)}>Delete</button>
-            </li>
-            
+            <tr key={index} >
+              {edit===index?(
+              <>
+              <td>{index+1}</td>
+               <td> <input  type="text" value={task} onChange={(e)=>setTask(e.target.value)}/></td>
+               <td> <button onClick={()=>handleEdit(index)}>Save</button> 
+                </td>
+              </>
+              ):(
+                <>
+                <td className="index">{index+1}</td>
+             <td className="content"> {a} </td>
+             <td><button className="del" onClick={() => handleDelete(index)}>Delete</button></td>
+             <td> <button className="edit" onClick={() => setEdit(index)}>Edit</button></td>
+              </>
+              )}
+            </tr>
           ))}
-        </ol>
-        <button onClick={rp}> resetpassword</button>
+        
+        </table>
+        </div>
+        </div>
+        <button > resetpassword</button>
+        </div>
 
-      </div>
+      
     </>
   );
 };

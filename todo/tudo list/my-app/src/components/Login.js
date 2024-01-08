@@ -81,7 +81,12 @@ import {Link , useNavigate} from "react-router-dom"
 
 
     return(
-        <>
+
+        < >
+        
+        <div className='la'>
+  
+
         <div className="loginall">
             <h1 className="log">Login</h1>
            
@@ -90,8 +95,9 @@ import {Link , useNavigate} from "react-router-dom"
             <label className="password">Password :</label>
             <input className="lpass" type="password" value={user.Password} placeholder="Password"  onChange={(e) => setUser({ ...user, Password: e.target.value })}/><br></br><br></br>
             <button className="subbutton" onClick={handleLogin}>Login</button>
-            <Link to="/Register" className="">  Register</Link> 
-           
+            <Link to="/Register" className="emsg">  Register</Link> 
+             <p className='emsg'>{error}</p>
+            </div>
             </div>
         </>
     )

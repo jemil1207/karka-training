@@ -1,14 +1,12 @@
-/* *{
-    background-color: whitesmoke
-  }
-  
+/* 
+
   .regall{
   
   text-align: center;
-  background-color: white;
+  background-color: #EEF5FF;
   border: solid;
-  border-radius: 25%;
-    color:blue;
+  border-radius: 5mm;
+    color:#176B87;
     margin-top: 5%;
     margin-left: 35%;
     margin-right: 35%;
@@ -21,48 +19,48 @@
    margin-right: 25px;
     font-size: 50px;
     margin-top:10 px;
-    background-color: white;
+    background-color: #EEF5FF;
   }
   .ruser{
-    background-color: white;
+    background-color: #EEF5FF;
     margin-top: 40px;
     border-radius: 5mm;
     padding: 10px;
     margin-left: 10px;
     padding-right: 50px;
-    border: solid blue;
+    border: solid #176B87;
   }
   .rpass{
-    background-color: white;
+    background-color: #EEF5FF;
     margin-left: 20px;
     border-radius: 0%;
     padding: 10px;
     padding-right: 50px;
-    border: solid blue;
+    border: solid #176B87;
     border-radius: 5mm;
   }
   .regbutton{
   
-    color: blue;
+    color:#EEF5FF;
     font-size: 20px;
-    border: solid blue;
-    padding-left: 10px;
-    padding-right:10px;
-    background-color: white;
+    background-color: #176B87;
+    
+    padding: 10px  15px;
+   
     margin-top: 40px  ;
   }
   .username{
     font-size: 20px;
-    background-color: white;
+    background-color: #EEF5FF;
   }
   .password{
-    background-color: white;
+    background-color: #EEF5FF;
     font-size: 20px;
   }
   .reglink{
     padding-left: 10px;
     color:red;
-    background-color: white;
+    background-color: #EEF5FF;
     font-size: 20px;
   }
    */

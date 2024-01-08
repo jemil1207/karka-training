@@ -1,13 +1,19 @@
-/* *{background-color: whitesmoke
-}
+/* body {
+  background-color: #176B87;
+  margin: 0; 
+  padding: 0; 
+} */
+
+/* 
+
 .loginall{
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
-    border: solid;
-    border-radius: 25%;
-    background-color: white;
-      color:blue;
+    
+    border-radius: 5mm;
+    background-color:#EEF5FF;
+      color:#176B87;
       margin-top: 5%;
       margin-left: 35%;
       margin-right: 35%;
@@ -16,38 +22,38 @@
       position: relative;
 }
 .luser{
-  background-color: white;
+     background-color:#EEF5FF;
+  
    
     margin-top: 40px;
     border-radius: 5mm;
     padding: 10px;
     margin-left: 10px;
     padding-right: 50px;
-    border: solid blue;
+    border: solid #176B87;
 }
 .lpass{
-  background-color: white;
+    background-color:#EEF5FF;
     margin-left: 20px;
     border-radius: 0%;
     padding: 10px;
     padding-right: 50px;
-    border: solid blue;
+    border: solid #176B87;
     border-radius: 5mm;
 }
 
-.subbutton{
-  
-    color: blue;
-    font-size: 20px;
-    border: solid blue;
-    padding-left: 10px;
-    padding-right:10px;
-    background-color: white;
-    margin-top: 40px  ;
-  }
+.subbutton {
+  color: #EEF5FF;
+  font-size: 20px;
+  background-color: #176B87;
+  padding: 10px 18px;
+  border: 0;
+  margin-top: 40px;
+}
 
   .log{
-    background-color: white;
+    background-color:#EEF5FF;
+    color:#176B87;
       margin-left: 0px;
     margin-right: x;
      font-size: 50px;
@@ -57,12 +63,12 @@
 
   .username{
     
-    background-color: white;
+    background-color:#EEF5FF;
     font-size: 20px;
     
   }
   .password{
-    background-color: white;
+    background-color:#EEF5FF;
     font-size: 20px;
   }
   .loglink{
@@ -73,9 +79,9 @@
    
   }
   .emsg{
-    background-color: white;
+    background-color: #EEF5FF;
     color: red;
-
+    font-size: 20px;
     margin-left: 25px;
    margin-right: 25px;
   } */
