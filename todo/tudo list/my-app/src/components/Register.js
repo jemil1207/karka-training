@@ -1,6 +1,6 @@
 // import React, { useState } from 'react';
 // import { Link, useNavigate } from 'react-router-dom';
-// 
+
 //  const Register = () => {
 //   const navigate = useNavigate();
 
@@ -48,6 +48,10 @@
 //   );
 // };
 // export default Register;
+
+
+
+
 import './Register.css'
 import React, { useState } from "react";
 import { Link, useNavigate } from 'react-router-dom';

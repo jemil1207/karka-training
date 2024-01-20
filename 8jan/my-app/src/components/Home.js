@@ -1,6 +1,6 @@
 // 
 
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 const Home = () => {
   const [user, setUser] = useState({});
@@ -19,7 +19,9 @@ const Home = () => {
   };
 
  
-  fetchUserData();
+  useEffect(() => {
+    fetchUserData();
+  }, []);
 
   console.log(user);
 
