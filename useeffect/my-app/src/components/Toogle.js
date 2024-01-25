@@ -16,4 +16,6 @@ const Toogle = () => {
     <button onClick={to}>Toggle with setState </button>
     <button onClick={remov}> Remove from the DOM</button>
      <p ref={ref}>Hello world</p>
-  </div>git 
+  </div>
+  )}
+  export default Toogle

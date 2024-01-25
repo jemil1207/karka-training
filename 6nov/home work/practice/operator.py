@@ -15,19 +15,18 @@
 # age=20
 # text="my name is siva, i am {} "
 # print(text.format(age))
-# quantity=45
-# itemnum=547
-# price=47
-# text="i want {2} piece of item {1} for {0} dollars"
+quantity=45
+itemnum=547
+price=47
+text="i want {2} piece of item {1} for {0} dollars"
 
-# # print(text.format(quantity,itemnum,price))
-# print(text.format(itemnum,price,quantity))
+# print(text.format(quantity,itemnum,price))
+print(text.format(itemnum,price,quantity))
 # text='i\'m alright'
 # print(text)
 # text=" karka \r academy"
 # print(text)
-# txt="hello, WELCOme to karka"
-# print(txt.find("welcome"))
+5
 # a=5
 # print(type(a))
 # name='siva'
